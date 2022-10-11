@@ -2,6 +2,8 @@ import React from 'react';
 import logo from './logo.svg';
 import { Counter } from './features/counter/Counter';
 import './App.css';
+import ResourceCal from './components/Resource';
+import RenderCount from './components/UseEffectExample';
 
 function App() {
   return (
@@ -51,6 +53,8 @@ function App() {
           </a>
         </span>
       </header>
+      <ResourceCal />
+      <RenderCount />
     </div>
   );
 }
