@@ -1,0 +1,73 @@
+.complainForm {
+  /* display: block !important; */
+  /* float: left; */
+  margin: auto;
+  text-align: left;
+  width: max-content;
+  padding-top: 1rem;
+  max-height: fit-content;
+  height: fit-content;
+}
+
+.nameLabel {
+  color: #31B2EA;
+  font-size: 15px;
+  margin-top: 1rem;
+  margin-top: .5rem;
+}
+
+.nameInput {
+  height: 4.5vh;
+  border-radius: 5px;
+  border: 1px solid#31B2EA;
+  text-align: left;
+  padding-left: .4rem;
+  align-items: center;
+  min-height: 4.5vh;
+}
+
+.submitInput {
+  margin-top: 1rem;
+  width: max-content;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  /* color: #5e7179; */
+  border: 1px solid#31B2EA;;
+  height: 4vh;
+  border-radius: 4px;
+  font-weight: 400;
+  cursor: pointer;
+}
+
+#pInvoice {
+  border: none;
+}
+
+.addressInput {
+  height: 6.5vh;
+  border-radius: 5px;
+  border: 1px solid#31B2EA;
+  text-align: left;
+  padding-left: .4rem;
+  align-items: center;
+  max-width: fit-content;
+  min-height: 6vh;
+  max-height: 10vh;
+}
+
+.nameInput:focus {
+  height: 4.5vh;
+  border-radius: 5px;
+  border: 1px solid#31B2EA;
+  text-align: left;
+  padding-left: .4rem;
+  align-items: center;
+  min-height: 4.5vh;
+}
+
+@media screen and (max-width: 486px) {
+  .nameInput {
+    width: -webkit-fill-available;
+  }
+}

@@ -19,7 +19,8 @@ export default function ResourceCal() {
       <div>
         <button onClick={() => setResourceType('post')}>Posts</button>
         <button onClick={() => setResourceType('users')}>Users</button>
-        <button onClick={() => setResourceType('comments')}>Comments</button>
+        <button onClick={() => setResourceType('comments')}>Comments</button>\
+        <button>Useless button</button>
       </div>
       <h1>{resourceType}</h1>
       <h1>{windowWidth}</h1>

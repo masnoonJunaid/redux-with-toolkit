@@ -4,11 +4,16 @@ import { Counter } from './features/counter/Counter';
 import './App.css';
 import ResourceCal from './components/Resource';
 import RenderCount from './components/UseEffectExample';
+import UseMemoExample from './components/UseMemoExample';
+import { HomePage } from './components/HomePage';
+import {Routes, Route } from 'react-router-dom'
+import { ComplainForm } from './components/ComplainForm';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
+      <Routes>
+      {/* <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <Counter />
         <p>
@@ -52,9 +57,14 @@ function App() {
             React Redux
           </a>
         </span>
-      </header>
-      <ResourceCal />
+      </header> */}
+      {/* <ResourceCal />
       <RenderCount />
+      <UseMemoExample /> */}
+        <Route path="/" element={<HomePage />} />
+        <Route path="/register-complaint" element={<ComplainForm />} />
+        <Route path="/schedule-repair" element={<ComplainForm />} />
+      </Routes>
     </div>
   );
 }
